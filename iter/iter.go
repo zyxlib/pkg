@@ -1,5 +1,13 @@
 package iter
 
+func Range(n int) []int {
+	ret := make([]int, n)
+	for i := 0; i < n; i++ {
+		ret[i] = i
+	}
+	return ret
+}
+
 func PermutationInts(xs []int) (perm [][]int) {
 	n := len(xs)
 	if n > 0 {
